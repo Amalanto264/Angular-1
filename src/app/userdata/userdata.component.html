@@ -1,0 +1,30 @@
+<p>userdata works!</p>
+
+<div *ngIf="users.length>0;">
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th>DOB</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.salary}}</td>
+            <td>{{user.dob}}</td>
+        </tr>
+    </tbody>
+
+
+</table>
+</div>
+<ng-template>
+
+</ng-template>
